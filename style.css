@@ -1,0 +1,80 @@
+/* style.css */
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+form {
+    background: white;
+    padding: 50px;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label, input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #3498db;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: prompt;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+li {
+    background: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cancel-btn {
+    background: #e74c3c;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.cancel-btn:hover {
+    background: #c0392b;
+}
