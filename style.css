@@ -1,78 +1,93 @@
-/* style.css */
 body {
     font-family: 'Prompt', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #ffffff;
+    color: #000000;
     text-align: center;
-    margin: 20px;
+    margin: 10px;
 }
 
 h1, h2 {
-    color: #2c3e50;
+    color: #0f0f0f;
 }
 
+/* ปรับฟอร์มให้มีระยะห่างที่สมดุลขึ้น */
 form {
-    background: white;
-    padding: 50px;
+    background: rgb(255, 167, 227);
+    padding: 40px; /* ลด padding ให้ดูสมดุลขึ้น */
     max-width: 400px;
-    margin: 20px auto;
-    border-radius: 10px;
+    margin: 30px auto; /* เพิ่มระยะห่างด้านบน */
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-label, input {
-    display: block;
+/* ปรับช่องกรอกข้อมูลให้สวยงามขึ้น */
+label {
     width: 100%;
-    margin-bottom: 10px;
-    font-size: 16px;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 input {
-    padding: 8px;
+    width: calc(100% - 16px);
+    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px; /* เพิ่มระยะห่างระหว่างช่องกรอก */
 }
 
+/* ปรับปุ่มให้มีระยะห่างด้านบน */
 button {
-    background: #3498db;
+    background: #35aeff;
     color: white;
-    padding: 10px;
+    padding: 12px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
-    font-size: 16px;
-    font-family: prompt;
+    font-size: 15px;
+    width: 40%;
+    margin-top: 10px; /* เพิ่มระยะห่างด้านบน */
+    font-family: 'Prompt', sans-serif;
 }
 
 button:hover {
-    background: #2980b9;
+    background: #2388cb;
 }
 
+/* รายการนัดหมาย */
 ul {
     list-style: none;
     padding: 0;
     max-width: 500px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 li {
-    background: white;
+    background: rgb(255, 167, 227);
     padding: 10px;
     margin: 10px 0;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
 }
 
+/* ปรับปุ่มยกเลิกให้มีขนาดที่เหมาะสม */
 .cancel-btn {
-    background: #e74c3c;
+    background: #ff1900;
     border: none;
-    padding: 5px 10px;
+    padding: 6px 8px;
     color: white;
-    border-radius: 3px;
+    border-radius: 8px;
+    width: 15%;
     cursor: pointer;
+    font-size: 14px;
 }
 
 .cancel-btn:hover {
