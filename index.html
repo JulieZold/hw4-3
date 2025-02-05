@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบจัดการตารางนัดหมาย</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>ระบบจัดการตารางนัดหมาย</h1>
+
+    <form id="appointmentForm">
+        <label>หัวข้อ : <input type="text" id="title" required></label>
+        <label>วันที่ : <input type="date" id="date" required></label>
+        <label>เวลาเริ่ม : <input type="time" id="startTime" required></label>
+        <label>เวลาสิ้นสุด : <input type="time" id="endTime" required></label>
+        <button type="submit">เพิ่มนัดหมาย</button>
+    </form>
+
+    <h2>รายการนัดหมาย</h2>
+    <ul id="appointmentList"></ul>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
