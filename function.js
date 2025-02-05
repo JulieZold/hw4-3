@@ -20,7 +20,7 @@ document.getElementById("appointmentForm").addEventListener("submit", function (
     this.reset();
 });
 
-// ✅ ฟังก์ชันบันทึกข้อมูลลง localStorage
+// ฟังก์ชันบันทึกข้อมูลลง localStorage
 function saveToLocalStorage(key, data) {
     try {
         localStorage.setItem(key, JSON.stringify(data));
@@ -30,7 +30,7 @@ function saveToLocalStorage(key, data) {
     }
 }
 
-// ✅ ฟังก์ชันดึงข้อมูลจาก localStorage
+// ฟังก์ชันดึงข้อมูลจาก localStorage
 function getFromLocalStorage(key) {
     try {
         const data = localStorage.getItem(key);
@@ -42,7 +42,7 @@ function getFromLocalStorage(key) {
     }
 }
 
-// ✅ ฟังก์ชันเพิ่มนัดหมาย
+// ฟังก์ชันเพิ่มนัดหมาย
 function createAppointment(appointmentData) {
     let appointments = getFromLocalStorage("appointments");
     
@@ -54,7 +54,7 @@ function createAppointment(appointmentData) {
     displayAppointments();
 }
 
-// ✅ ฟังก์ชันยกเลิกนัดหมาย
+// ฟังก์ชันยกเลิกนัดหมาย
 function cancelAppointment(appointmentId) {
     let appointments = getFromLocalStorage("appointments");
     appointments = appointments.map(appt => 
@@ -65,7 +65,7 @@ function cancelAppointment(appointmentId) {
     displayAppointments();
 }
 
-// ✅ ฟังก์ชันแสดงนัดหมาย
+// ฟังก์ชันแสดงนัดหมาย
 function displayAppointments() {
     let appointments = getFromLocalStorage("appointments");
     let appointmentList = document.getElementById("appointmentList");
@@ -89,5 +89,5 @@ function displayAppointments() {
         }
     });
 
-    console.log("📌 รายการนัดหมายที่โหลด:", appointments);
+    console.log("📌 รายการนัดหมายที่โหลด :", appointments);
 }
